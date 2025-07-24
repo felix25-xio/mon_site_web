@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 70%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+.banniere {
+    background: linear-gradient(90deg, #FFD600 60%, #E30613 100%);
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+.logo {
+    height: 60px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #E30613;
+}
+.intro {
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+    background: #FFD600;
+    color: #222;
+}
+.produits-vedette, .catalogue {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.produits-vedette h2, .catalogue h1 {
+    color: #E30613;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.produits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.produit {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.produit:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(227,6,19,0.12);
+}
+.produit img {
+    max-width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.produit h3 {
+    color: #FFD600;
+    margin: 0.5rem 0;
+}
+.produit p {
+    color: #222;
+    font-size: 1rem;
+}
+.btn {
+    display: inline-block;
+    background: #E30613;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 2rem;
+    transition: background 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #FFD600;
+    color: #E30613;
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 3rem;
+}
+.contact {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-contact input, .form-contact textarea {
+    padding: 0.7rem;
+    border: 1px solid #FFD600;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.form-contact button {
+    align-self: flex-end;
+}
+.coordonnees {
+    margin-top: 2rem;
+    background: #FFD600;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #222;
+}
+.filtres-categories {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.btn.active {
+    background: #FFD600;
+    color: #E30613;
+    border: 2px solid #E30613;
+}
+.recherche-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recherche-input {
+    padding: 0.7rem;
+    border: 2px solid #FFD600;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 250px;
+}
+.btn-secondary {
+    background: #222;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #FFD600;
+    color: #222;
+}
+.btn-detail {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+.aucun-resultat {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    grid-column: 1 / -1;
+}
+.detail-produit {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+.produit-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.produit-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.produit-info h1 {
+    color: #E30613;
+    margin-bottom: 1rem;
+}
+.categorie {
+    color: #FFD600;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+.info-section {
+    margin-bottom: 1.5rem;
+}
+.info-section h3 {
+    color: #E30613;
+    margin-bottom: 0.5rem;
+}
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.navigation-produits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+@media (max-width: 700px) {
+    .banniere {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .produits-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact {
+        padding: 1rem;
+    }
+    .produit-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .recherche-form {
+        flex-direction: column;
+    }
+    .recherche-input {
+        min-width: auto;
+        width: 100%;
+    }
+    .actions {
+        flex-direction: column;
+    }
+    .navigation-produits {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
